@@ -1,0 +1,24 @@
+# Data & Logs
+recordings/
+logs/
+hailort*.log
+gstshark_*/
+
+# Models (Large binaries)
+models/*.hef
+models/vosk-small-en-us/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE & Project
+.cursor/
+.vscode/
+context.md
+docs/
+
+# OS
+.DS_Store
