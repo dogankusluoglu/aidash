@@ -1,0 +1,29 @@
+video:
+  width: 1920
+  height: 1080
+  fps: 30
+  codec: "x264enc tune=zerolatency speed-preset=ultrafast"
+  segment_time: 300 # 5 minutes in seconds
+  recordings_path: "recordings"
+
+inference:
+  model_path: "models/yolov11s.hef"
+  input_width: 640
+  input_height: 640
+  threshold: 0.2
+
+storage:
+  max_usage_percent: 90
+
+power:
+  ignition_gpio: 17 # GPIO pin for ignition detection
+
+gps:
+  port: "/dev/ttyACM0"
+  baud: 9600
+  use_gpsd: true
+  overlay_enabled: true
+  hard_brake_threshold: -3.0 # m/s^2
+  hard_accel_threshold: 2.5  # m/s^2
+  tdi_threshold: 0.5         # Traffic Density Index sensitivity
+

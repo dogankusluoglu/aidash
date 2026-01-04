@@ -1,0 +1,17 @@
+[Unit]
+Description=AI Dashcam Service
+After=network-online.target hailo.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=5
+User=barbarossa
+WorkingDirectory=/home/barbarossa/aidash
+ExecStartPre=/bin/sleep 10
+ExecStart=/usr/bin/python3 /home/barbarossa/aidash/src/main.py
+
+[Install]
+WantedBy=multi-user.target
+
