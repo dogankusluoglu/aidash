@@ -1,5 +1,7 @@
 # Hailo 8 Dashcam Project (aidash)
 
+![Highly precise COCO object detection](https://github.com/dogankusluoglu/aidash/blob/main/hq720.jpg?raw=true)
+
 ## Overview
 This is an AI-powered dashcam application designed for the **Raspberry Pi 5** using the **Hailo-8** AI accelerator. It captures high-definition video from a Raspberry Pi camera, runs real-time object detection (YOLO), and saves the video with AI bounding boxes permanently "burned" into the recording.
 
