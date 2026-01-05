@@ -82,8 +82,12 @@ Install the required Python packages:
 pip install opencv-python pyyaml numpy pyserial pynmea2 gpxpy folium
 ```
 
-### 6. AI Models
-The `.hef` model files are large and excluded from the repository. You must download them manually or use the provided script for the voice model.
+### 6.1. Retrained AI Models
+I've included the models I've trained on different datasets in `retrained_models/`:
+ - `yolov11s_bdd100k.hef` - Poor retraining attempt of YOLOv11s using [this dataset](https://www.kaggle.com/datasets/a7madmostafa/bdd100k-yolo/data). Hailo AI Software Suite is only available for Linux, otherwise the Docker container must be used via WSL. It being 2am, I didn't bother struggling to get my Nvidia GPU drivers working in a Docker container nested within WSL. Falling back on the CPU results in a optimization level of 0 with only 64 images, causing lower accuracy and framerate (~17 FPS). Just keeping it here for science, I guess.
+
+### 6.2. AI Models
+The rest of the `.hef` model files are large and excluded from the repository. You must download them manually or use the provided script for the voice model.
 
 #### Manual Download (Recommended)
 1.  **Create the models directory**:
