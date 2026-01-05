@@ -7,7 +7,7 @@ video:
   recordings_path: "recordings"
 
 inference:
-  model_path: "models/yolov11s.hef"
+  model_path: "models/yolov11s_bdd100k.hef"
   input_width: 640
   input_height: 640
   threshold: 0.2
